@@ -1,0 +1,6 @@
+[submodule "freetype2"]
+	path = freetype2
+	url = https://git.savannah.gnu.org/git/freetype/freetype2.git
+[submodule "Besley"]
+	path = Besley
+	url = https://github.com/indestructible-type/Besley.git
