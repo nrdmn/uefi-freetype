@@ -8,7 +8,7 @@ const freetype = @cImport({
     @cInclude("glue.c");
 });
 
-const face_ttf = @embedFile("Besley/Finished TTF/Besley-Medium.ttf");
+const face_ttf = @embedFile("comicneue/Web/ComicNeue-Bold.ttf");
 
 export fn ft_smalloc(size: usize) *c_void {
     var buf: *c_void = undefined;
