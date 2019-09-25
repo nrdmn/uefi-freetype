@@ -11,6 +11,7 @@ pub fn build(b: *Builder) void {
     glue.addCSourceFile("glue.c", [_][]const u8{
         "--target=x86_64-pc-win32-coff", "-DFT2_BUILD_LIBRARY",
     });
+    glue.setBuildMode(b.standardReleaseOptions());
     const exe = b.addExecutable("bootx64", "main.zig");
     exe.setBuildMode(b.standardReleaseOptions());
     exe.setTheTarget(Target{
